@@ -22,7 +22,7 @@ def parsehtmlMusicList(html):
     list_menu = soup.select('div.cover ul.chapter li a')  # 找到目录的标签
     print('书名：'+list_title[0].text+'\n\n')
     print('简介：'+list_intro[0].text+'\n\n')
-    f = open('C://Users/xxxx/'+list_title[0].text+'.txt', 'a', encoding='utf8')  # 指定存储位置
+    f = open('C://Users/xxx/'+list_title[0].text+'.txt', 'a', encoding='utf8')  # 指定存储位置
     f.write(list_title[0].text+"\n")  # 写入书名
     f.write(list_intro[0].text+"\n\n\n")  # 写入简介
     n = 0
