@@ -22,7 +22,7 @@ def parsehtmlMusicList(html):
     list_menu = soup.select('div.cover ul.chapter li a')  # 找到目录的标签
     print('书名：'+list_title[0].text+'\n\n')
     print('简介：'+list_intro[0].text+'\n\n')
-    f = open('C://Users/ahmwang/Downloads/'+list_title[0].text+'.txt', 'a', encoding='utf8')  # 指定存储位置
+    f = open('C://Users/xxxx/'+list_title[0].text+'.txt', 'a', encoding='utf8')  # 指定存储位置
     f.write(list_title[0].text+"\n")  # 写入书名
     f.write(list_intro[0].text+"\n\n\n")  # 写入简介
     n = 0
@@ -41,7 +41,7 @@ def parsehtmlMusicList(html):
         f.write(chapterText+"\n\n\n")  # 写入简介
         n += 1
 
-url = 'https://transcoder.baiducontent.com/tc?srd=1&dict=32&h5ad=1&bdenc=1&lid=10903147621205262392&title=%E5%BF%AB%E7%A9%BF%E4%B9%8B%E7%82%AE%E7%81%B0%E5%A5%B3%E9%85%8D%E9%80%86%E8%A2%AD%E8%AE%B0%E6%97%A0%E5%BC%B9%E7%AA%97_%E5%BF%AB%E7%A9%BF%E4%B9%8B%E7%82%AE%E7%81%B0%E5%A5%B3%E9%85%8D%E9%80%86%E8%A2%AD%E8%AE%B0...&nsrc=IlPT2AEptyoA_yixCFOxCGZb8c3JV3T5ABfPNyVJBzqb95qshbWxBdRpXTjzKWiCZpPPdzLQtRwPaDD7Qq'
+url = 'https://transcoder.baiducontent.com/tc?srd=1&dict=32&h5...................'  # 小说章节目录页
 url = gethtml(url, headers={
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
     'Host': 'transcoder.baiducontent.com'
