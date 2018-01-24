@@ -18,7 +18,7 @@ print(soup2.contents)
 bookName = soup.h1.string  # 找到了书名
 print(u"----------------------'书名'------------------------------")
 print(u"书名："+bookName)
-f = open('C://Users/ahmwang/Downloads/'+bookName+'.txt', 'a', encoding='utf8')
+f = open('C://Users/xxxx/Downloads/'+bookName+'.txt', 'a', encoding='utf8')
 f.write(bookName+"\n\n")  # 写入书名
 Desc = soup.p.get_text()  # 简介
 f.write(Desc+"\n\n\n")  # 写入简介
